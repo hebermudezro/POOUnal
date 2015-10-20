@@ -1,7 +1,7 @@
 //Subclass ThueMorse
 class ThueMorse extends Sequence {
     String resultado;
-    
+    char[] compare;
   @Override
   int compute(int n) {
     return -1;
@@ -27,16 +27,17 @@ class ThueMorse extends Sequence {
     return resultado; 
   }
   void puntos(int i,float coorx,float coory, int n){
-    float tcirculo=2;
-    //String resultado = new String();
-    //resultado = computeT(n);   
-    if(resultado.charAt(i)=='0'){
+    setResultado(n);
+    getResultado();
+    char[] compare=resultado.toCharArray();
+    if(compare[i]=='0'){
+    /*if(resultado.charAt(i)=='0'){*/
       fill(0,255,0);
     }
     else{  
       fill(0,0,255);
     }
-    ellipse(coorx,coory,tcirculo,tcirculo);
+    /*ellipse(coorx,coory,tcirculo,tcirculo);*/
   }
   
   @Override

@@ -4,6 +4,7 @@ boolean click;
 
 void setup() {
   size(720,640);
+  noStroke();
   colorMode(HSB, 360, 100, 100);
   // We cannot initialize an 'abstract object'
   // only 'concrete' ones:
@@ -15,7 +16,7 @@ void draw() {
   sequence.display(15);
 }
 
-void keyPressed() {
+void mousePressed() {
   click = !click;
   // both Fibonacci and Padovan object instances
   // may be assigned to the superclass sequence object:
