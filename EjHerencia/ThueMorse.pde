@@ -1,8 +1,15 @@
 //Subclass ThueMorse
 class ThueMorse extends Sequence {
   @Override
-  int compute(int n) {//Using the abstract method of superclass with an empty method
-    return -1;
+  int compute(int n) {//This method calculate the amount of '1' chars in the ThueMorse sequence
+    String binarios =computeT(n);
+    float temp=pow(2,n+1);
+    int unos=0;
+    for(int i=0;i<temp;i++){
+      if(binarios.charAt(i)=='1')
+      unos++;
+    }
+    return unos;
   }
   @Override
   String computeT(int n) {//ThueMorse computing method
@@ -52,4 +59,3 @@ class ThueMorse extends Sequence {
     popStyle();
   }
 }
-  

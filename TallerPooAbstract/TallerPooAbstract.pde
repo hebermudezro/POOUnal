@@ -1,6 +1,6 @@
 // Object declaration
 Sequence sequence;
-int n=20;
+int n=15;
 void setup() {
   size(720,640);
   
@@ -8,9 +8,9 @@ void setup() {
 }
 
 void draw() {
-  background(0);
+  background(255);
   //object use
- // sequence.barChart(n);
-  sequence.lineChart(n); //<>//
+  sequence.barChart(n);
+ //sequence.lineChart(n); //<>//
   sequence.curveFitting(n);
 }
