@@ -1,11 +1,7 @@
-class PInicio {
+class PInicio extends Pantalla{
+  @Override
   void display() {
-    noFill();
-    stroke(188);
-    strokeWeight(4);
-    background(127);
-    rect(20, 36, 472, 408, 8);
-    rect(36, 52, 440, 376, 8);
+    fondo();
     simbolos();
     texto();
     ramaI();
@@ -14,6 +10,16 @@ class PInicio {
     hojasD();
     tituloFondo();
     titulo();
+  }
+  void fondo(){
+    pushStyle();
+    noFill();
+    stroke(188);
+    strokeWeight(4);
+    background(127);
+    rect(20, 36, 472, 408, 8);
+    rect(36, 52, 440, 376, 8);
+    popStyle();
   }
   void simbolos() {
     pushStyle();
@@ -30,12 +36,13 @@ class PInicio {
     textSize(14);
     text("Basado en 'Othello - NES (1984)'", 150, 300);
     text("Universidad Nacional de Colombia, 2015", 120, 340);
-    text("Presione 'S' para continuar", 160, 380);
+    text("Presione '*' para continuar", 160, 380);
     popStyle();
   }
   void ramaI() {
     int x, y;
     pushStyle();
+    noFill();
     strokeWeight(4);
     stroke(56, 108, 0);
     beginShape();
@@ -67,6 +74,7 @@ class PInicio {
   void ramaD() {
     int x, y;
     pushStyle();
+    noFill();
     strokeWeight(4);
     stroke(56, 108, 0);
     beginShape();
