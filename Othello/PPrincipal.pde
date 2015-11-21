@@ -1,17 +1,12 @@
+//Esta clase unicamente dibuja el fondo de la pantalla principal
 class PPrincipal extends Pantalla {
-  @Override
-    void display() {
+void display() {
     principal();
-    simbolos();
-    derecha1();
-    titulo();
-    derecha2();
-    derecha3();
   }
   void principal() {
     pushStyle();
     noStroke();
-    background(127);
+    background(127); 
     fill(192, 112, 0);
     rect(0, 28, 318, 384, 12);
     fill(120, 64, 0);
@@ -23,6 +18,7 @@ class PPrincipal extends Pantalla {
     fill(120, 64, 0);
     rect(18, 80, 282, 284);
     popStyle();
+    simbolos();
   }
   void simbolos() {
     pushStyle();
@@ -32,6 +28,7 @@ class PPrincipal extends Pantalla {
     rect(32, 30, 38, 46);
     rect(256, 366, 38, 46);
     popStyle();
+    derecha1();
   }
   void derecha1() {
     pushStyle();
@@ -41,6 +38,7 @@ class PPrincipal extends Pantalla {
     rect(320, 30, 158, 62);
     strokeWeight(2);
     rect(326, 36, 146, 50);
+    titulo();
   }
   void titulo() {
     pushStyle();
@@ -69,8 +67,9 @@ class PPrincipal extends Pantalla {
     fill(255, 240, 144);
     rect(400, 64, 14, 4);
     popStyle();
+    derecha2();
   }
-  void derecha2(){
+  void derecha2() {
     pushStyle();
     strokeWeight(4);
     stroke(188);
@@ -79,15 +78,16 @@ class PPrincipal extends Pantalla {
     strokeWeight(2);
     rect(326, 116, 146, 178);
     popStyle();
+    derecha3();
   }
-  void derecha3(){
+  void derecha3() {
     pushStyle();
     strokeWeight(4);
     stroke(188);
-    fill(40,0,184);
-    rect(320,300,158,110);
+    fill(40, 0, 184);
+    rect(320, 300, 158, 110);
     strokeWeight(2);
-    rect(326,306,146,98);
+    rect(326, 306, 146, 98);
     popStyle();
   }
 }

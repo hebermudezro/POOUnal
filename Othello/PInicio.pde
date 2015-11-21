@@ -1,5 +1,5 @@
+//Esta clase unicamente dibuja la pantalla de inicio
 class PInicio extends Pantalla{
-  @Override
   void display() {
     fondo();
     simbolos();

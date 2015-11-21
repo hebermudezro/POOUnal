@@ -1,3 +1,4 @@
+//Esta clase unicamente dibuja la pantalla de sellecion de opciones
 class PSeleccion extends Pantalla {
   void display() {
     fondo();
