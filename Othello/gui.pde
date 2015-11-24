@@ -1,4 +1,4 @@
-
+boolean movimiento=true;
 public void handleTextEvents(GEditableTextControl textcontrol, GEvent event) {
   textcontrol.getText();
 }

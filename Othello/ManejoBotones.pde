@@ -1,5 +1,5 @@
 public int[] coordenadas(GImageToggleButton button, GEvent event) {
-  int[] coor =new int[2];
+  int[] coor =new int[2];//Este metodo devuelve una coordenada para el manejo de los botones
   if (button==boton00) {
     coor[0]=0;
     coor[1]=0;
@@ -259,135 +259,137 @@ public int[] coordenadas(GImageToggleButton button, GEvent event) {
   return coor;
 }
   //Metodo para leer el valor actual del boton
-  public void leerValor(int x, int y, int n) {
+  public int leerValor(int x, int y) {
     if (x==0&&y==0) 
-      boton00.getState();
+      return boton00.getState();
     if (x==0&&y==1)
-      boton01.getState();
+      return boton01.getState();
     if (x==0&&y==2) 
-      boton02.getState();
+      return boton02.getState();
     if (x==0&&y==3) 
-      boton03.getState();
+      return boton03.getState();
     if (x==0&&y==4) 
-      boton04.getState();
+      return boton04.getState();
     if (x==0&&y==5) 
-      boton05.getState();
+      return boton05.getState();
     if (x==0&&y==6) 
-      boton06.getState();
+      return boton06.getState();
     if (x==0&&y==7) 
-      boton07.getState();
+      return boton07.getState();
     if (x==1&&y==0) 
-      boton10.getState();
+      return boton10.getState();
     if (x==1&&y==1) 
-      boton11.getState();
+      return boton11.getState();
     if (x==1&&y==2) 
-      boton12.getState();
+      return boton12.getState();
     if (x==1&&y==3) 
-      boton13.getState();
+      return boton13.getState();
     if (x==1&&y==4) 
-      boton14.getState();
+      return boton14.getState();
     if (x==1&&y==5) 
-      boton15.getState();
+      return boton15.getState();
     if (x==1&&y==6) 
-      boton16.getState();
+      return boton16.getState();
     if (x==1&&y==7) 
-      boton17.getState();
+      return boton17.getState();
     if (x==2&&y==0) 
-      boton20.getState();
+      return boton20.getState();
     if (x==2&&y==1) 
-      boton21.getState();
+      return boton21.getState();
     if (x==2&&y==2) 
-      boton22.getState();
+      return boton22.getState();
     if (x==2&&y==3) 
-      boton23.getState();
+      return boton23.getState();
     if (x==2&&y==4) 
-      boton24.getState();
+      return boton24.getState();
     if (x==2&&y==5) 
-      boton25.getState();
+      return boton25.getState();
     if (x==2&&y==6) 
-      boton26.getState();
+      return boton26.getState();
     if (x==2&&y==7) 
-      boton27.getState();
+      return boton27.getState();
     if (x==3&&y==0) 
-      boton30.getState();
+      return boton30.getState();
     if (x==3&&y==1) 
-      boton31.getState();
+      return boton31.getState();
     if (x==3&&y==2) 
-      boton32.getState();
+      return boton32.getState();
     if (x==3&&y==3) 
-      boton33.getState();
+      return boton33.getState();
     if (x==3&&y==4) 
-      boton34.getState();
+      return boton34.getState();
     if (x==3&&y==5) 
-      boton35.getState();
+      return boton35.getState();
     if (x==3&&y==6) 
-      boton36.getState();
+      return boton36.getState();
     if (x==3&&y==7) 
-      boton37.getState();
+      return boton37.getState();
     if (x==4&&y==0) 
-      boton40.getState();
+      return boton40.getState();
     if (x==4&&y==1) 
-      boton41.getState();
+      return boton41.getState();
     if (x==4&&y==2) 
-      boton42.getState();
+      return boton42.getState();
     if (x==4&&y==3) 
-      boton43.getState();
+      return boton43.getState();
     if (x==4&&y==4) 
-      boton44.getState();
+      return boton44.getState();
     if (x==4&&y==5) 
-      boton45.getState();
+      return boton45.getState();
     if (x==4&&y==6) 
-      boton46.getState();
+      return boton46.getState();
     if (x==4&&y==7) 
-      boton47.getState();
+      return boton47.getState();
     if (x==5&&y==0) 
-      boton50.getState();
+      return boton50.getState();
     if (x==5&&y==1) 
-      boton51.getState();
+      return boton51.getState();
     if (x==5&&y==2) 
-      boton52.getState();
+      return boton52.getState();
     if (x==5&&y==3) 
-      boton53.getState();
+      return boton53.getState();
     if (x==5&&y==4) 
-      boton54.getState();
+      return boton54.getState();
     if (x==5&&y==5) 
-      boton55.getState();
+      return boton55.getState();
     if (x==5&&y==6) 
-      boton56.getState();
+      return boton56.getState();
     if (x==5&&y==7) 
-      boton57.getState();
+      return boton57.getState();
     if (x==6&&y==0) 
-      boton60.getState();
+      return boton60.getState();
     if (x==6&&y==1) 
-      boton61.getState();
+      return boton61.getState();
     if (x==6&&y==2) 
-      boton62.getState();
+      return boton62.getState();
     if (x==6&&y==3) 
-      boton63.getState();
+      return boton63.getState();
     if (x==6&&y==4) 
-      boton64.getState();
+      return boton64.getState();
     if (x==6&&y==5) 
-      boton65.getState();
+      return boton65.getState();
     if (x==6&&y==6) 
-      boton66.getState();
+      return boton66.getState();
     if (x==6&&y==7) 
-      boton67.getState();
+      return boton67.getState();
     if (x==7&&y==0) 
-      boton70.getState();
+      return boton70.getState();
     if (x==7&&y==1) 
-      boton71.getState();
+      return boton71.getState();
     if (x==7&&y==2) 
-      boton72.getState();
+      return boton72.getState();
     if (x==7&&y==3) 
-      boton73.getState();
+      return boton73.getState();
     if (x==7&&y==4) 
-      boton74.getState();
+      return boton74.getState();
     if (x==7&&y==5) 
-      boton75.getState();
+      return boton75.getState();
     if (x==7&&y==6) 
-      boton76.getState();
+      return boton76.getState();
     if (x==7&&y==7) 
-      boton77.getState();
+      return boton77.getState();
+            else
+      return -1;
   }
   //Metodo para asignar un estado incial y modificar el estado del boton
   //Los estados de un boton son: 0=Vacio,1=Blancas,2=Negras)
@@ -520,4 +522,5 @@ public int[] coordenadas(GImageToggleButton button, GEvent event) {
       boton76.setState(n);
     if (x==7&&y==7) 
       boton77.setState(n);
+
   }
